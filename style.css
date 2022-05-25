@@ -48,7 +48,7 @@ body {
 body{
   margin: 0;
   font-family: 'Mulish', sans-serif;
-  height: 5000px;
+  height: 6000px;
   background-color: #fff;
 }
 
@@ -240,7 +240,6 @@ font-size: 20px;
 }
 /* tocoin */
 .toncoin{
-height: 420px;
 background-color:var(--icon_light_secondary);
 border-radius: 35px;
 padding: 48px;
@@ -255,6 +254,9 @@ display: flex;
 }
 .empty{
   width: 50%;
+}
+.coin{
+width: 100%;
 }
 .toncoin-text{
 width: 50%;
@@ -286,8 +288,28 @@ display: flex;
 justify-content: space-between;
 }
 .timeline-box{
-  width: 30%;
+  width: 33.33333%;
+  border-top:#000 solid 1px;
 }
+.last{
+  border-top:#000 dashed 1px;
+}
+.dots{
+  background-color: #0082c2;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+transform: translatey(-50%);
+}
+.last-dots{
+  background-color: #ffffff;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+transform: translatey(-50%);
+border: #0082c2 solid 8px;
+}
+
 .timeline-years{
   font-size: 24px;
 }
@@ -432,6 +454,67 @@ font-weight: 900;
 .developers-info p{
   font-size: 20px;
 }
-.next{
-padding: 24px;
+.next1{
+font-weight: 700;
+  color: var(--text_light_secondary);
+}
+.next2{
+font-weight: 700;
+  color: #fff;
+}
+.next-container{
+  padding-top: 68px;
+display: flex;
+justify-content: space-between;
+}
+
+/* duk */
+
+.duk-container{
+padding: 140px 0;
+display: flex;
+justify-content: space-between;
+}
+.TON-Community{width: 50%;}
+.TON-Community h3{
+  font-size: 50px;
+  font-weight: 750;
+}
+.TON-Community p{
+  color: var(--text_light_secondary);
+  font-size: 24px;
+  }
+.duk-container div{width: 50%;}
+.duk{width: 100%;}
+ 
+/* apps */
+
+.apps-container{
+  background-color:var(--icon_light_secondary);
+  border-radius: 35px;
+height: 450px;
+overflow: hidden;
+}
+.apps{
+text-align: center;
+max-width: 50%;
+margin: auto;
+padding-bottom: 48px;
+}
+.png{
+  width: 80px;
+  border-radius: 18px;
+}
+.apps-icon{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.left-icon{
+width: 45%;
+position: relative;
+}
+.right-icon{
+width: 45%;
+position: relative;
 }
