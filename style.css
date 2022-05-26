@@ -48,7 +48,6 @@ body {
 body{
   margin: 0;
   font-family: 'Mulish', sans-serif;
-  height: 7000px;
   background-color: #fff;
 }
 
@@ -170,14 +169,12 @@ nav .links a{
 }
 .jem{
 width: 400px;
-height: 400px;
 background-color: var(--background_gradient_light) ;
 }
 
 .secondary_hero{
 background-color: #fff;
 color: var(--background_dark_main);
-height: 1100;
 }
 .toncoin-header{
 padding-top: 140px;
@@ -572,6 +569,9 @@ padding: 0 20px;
 display: flex;
 flex-direction: column;
 }
+.footer-links img{
+  max-width: fit-content;
+}
 .footer-links a{
   height: 40px;
   color: var(--text_light_secondary);
@@ -590,4 +590,70 @@ border-top:#c7c7c7 solid 1px; ;
     flex-direction: column;
     align-items: center;
   }
+  .number-container{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+  }
+  .number-box{
+    width: 95%;
+  }
+  .timeline-container{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toncoin{
+    flex-direction: column;
+    align-items: center;
+  }
+  .empty{
+   width: 95%;
+  }
+  .toncoin-text{
+  width: 95%;
+  }
+  .timeline-box{
+    width: 80%;
+    border-top: none;
+    border-left:rgb(177, 170, 170) solid 1px;
+  }
+  .last{
+    border-top: none;
+    border-left:rgb(177, 170, 170) dashed 1px;
+  }
+  .duk-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .TON-Community{width:95%;}
+  .duk-container div{width: 95%;}
+  .picture-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .body-footer{
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-links{
+    width: 50%;
+  }
+  .dots{
+  transform: translate(-50%);
+  }
+  .last-dots{
+    transform: translate(-50%);
+  }
+  .end{
+    flex-direction: column ;
+    align-items: center;
+
+  }
+  .end p{
+    order: 2;
+    font-size: 12px;
+  }
+
 }
