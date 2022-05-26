@@ -48,7 +48,7 @@ body {
 body{
   margin: 0;
   font-family: 'Mulish', sans-serif;
-  height: 6000px;
+  height: 7000px;
   background-color: #fff;
 }
 
@@ -174,14 +174,6 @@ height: 400px;
 background-color: var(--background_gradient_light) ;
 }
 
-
-
-@media screen and (max-width: 1100px) {
-  .details{
-    flex-direction: column;
-    align-items: center;
-  }
-}
 .secondary_hero{
 background-color: #fff;
 color: var(--background_dark_main);
@@ -194,7 +186,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-max-width: 640px;
 text-align: center;
 }
 .toncoin-header h2{
@@ -230,13 +221,14 @@ font-size: 20px;
 }
 .number-box .fifty-icon{
   position: absolute;
-  transform: translate(50%,-50%);
+  transform: translate(25%,-50%);
   right: 0;
   top: 50%;
   height: 70px;
 }
 .number-box .number{
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: 700;
 }
 /* tocoin */
 .toncoin{
@@ -289,10 +281,10 @@ justify-content: space-between;
 }
 .timeline-box{
   width: 33.33333%;
-  border-top:#000 solid 1px;
+  border-top:rgb(177, 170, 170) solid 1px;
 }
 .last{
-  border-top:#000 dashed 1px;
+  border-top:rgb(177, 170, 170) dashed 1px;
 }
 .dots{
   background-color: #0082c2;
@@ -403,7 +395,7 @@ padding-bottom: 160px;
 /* blockchain-for-developers */
 
 .blockchain-for-developers{
-  background-color: #000;
+  background:var( --background_dark_gradient);
   color: #fff;
 padding: 48px 0px;
 }
@@ -411,14 +403,41 @@ padding: 48px 0px;
 text-align: center;
 }
 .developers{
-background-color: #232328;
+background-color: var(--background_dark_secondary);
 border-radius: 25px;
 margin-top: 48px;
 }
 .black-header{
-  background-color: var(--button_dark_secondary);
+  background-color:#29292e;
   width: 100%;
 height: 1%;
+padding: 24px 40px;
+display: flex;
+align-items: center;
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+}
+
+.black-header .one{
+  background-color: #ed6a5e;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.black-header .two{
+  background-color: #f6be4f;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.black-header .three{
+  background-color: #62c554;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
 .developers-container{
   display: flex;
@@ -492,7 +511,6 @@ justify-content: space-between;
 .apps-container{
   background-color:var(--icon_light_secondary);
   border-radius: 35px;
-height: 450px;
 overflow: hidden;
 }
 .apps{
@@ -517,4 +535,59 @@ position: relative;
 .right-icon{
 width: 45%;
 position: relative;
+}
+
+/* participate */
+
+.participate-header{
+padding: 140px 25% 20px 25%;
+font-size: 16px;
+}
+.picture-container{
+  display: flex;
+  padding-bottom: 140px;
+}
+.picture div img{
+  width: 90%;
+  border-radius: 20px;
+}
+.picture h4{
+  width: 90%;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.picture p{
+  width: 90%;
+  color: var(--text_light_secondary);
+}
+
+/* footer */
+
+.body-footer{
+  display: flex;
+}
+.footer-links{
+width: 16.66%;
+padding: 0 20px;
+display: flex;
+flex-direction: column;
+}
+.footer-links a{
+  height: 40px;
+  color: var(--text_light_secondary);
+  font-size: 18px;
+}
+.end{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 48px 0;
+border-top:#c7c7c7 solid 1px; ;
+}
+
+@media screen and (max-width: 1100px) {
+  .details{
+    flex-direction: column;
+    align-items: center;
+  }
 }
