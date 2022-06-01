@@ -462,6 +462,7 @@ transition: 0.5s all;
 .developers-info{
 width: 75%;
 padding: 0px 48px;
+display: none;
 }
 .developers-info h3{
 font-size: 24px;
@@ -585,6 +586,17 @@ padding: 48px 0;
 border-top:#c7c7c7 solid 1px; ;
 }
 
+.select{
+  background-color: var(--text_light_secondary);
+  border-right: #06a1ef solid 3px;
+}
+.show{
+display: block;
+}
+
+
+
+
 @media screen and (max-width: 1100px) {
   .details{
     flex-direction: column;
@@ -655,5 +667,5 @@ border-top:#c7c7c7 solid 1px; ;
     order: 2;
     font-size: 12px;
   }
-
 }
+
